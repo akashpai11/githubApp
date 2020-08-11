@@ -2,6 +2,7 @@
   "name": "github-login-firebase",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "ng serve --ssl false",
     "build": "ng build",
@@ -9,11 +10,17 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.4",
+    "@angular/cli": "~9.1.4",
     "@angular/common": "~9.1.4",
     "@angular/compiler": "~9.1.4",
+    "@angular/compiler-cli": "~9.1.4",
     "@angular/core": "~9.1.4",
     "@angular/fire": "^6.0.2",
     "@angular/forms": "~9.1.4",
@@ -21,11 +28,14 @@
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
     "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
     "firebase": "^7.17.1",
     "ngrx-toastr": "^2.2.9",
     "ngx-toastr": "^13.0.0",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "typescript": "~3.8.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
