@@ -1,0 +1,21 @@
+<nav id="grad" class="navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand text-center text-dark" [routerLink]="['home']">
+    <img src="../../../assets/github.svg" width="30" height="30" alt="">
+    Github Finder App</a>
+
+  <div class="navbar-collapse">
+    <div class="navbar-nav ml-auto">
+      <div *ngIf="email" class="navbar-text float-left">
+        {{email}}
+      </div>
+      <a class="nav-item nav-link" [routerLink]="['/home']">Home</a>
+      <!-- when email isnt present then only show signin and similarlr others below -->
+      <a *ngIf="!email" class="nav-item nav-link" [routerLink]="['/signin']" routerLinkActive="active">Signin</a>
+
+      <a *ngIf="!email" class="nav-item nav-link" [routerLink]="['/signup']" routerLinkActive="active">Signup</a>
+
+      <a *ngIf="email" class="nav-item nav-link" [routerLink]="['/signout']" (click)=handleSignOut()>Logout</a>
+    </div>
+
+  </div>
+</nav>

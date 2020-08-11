@@ -1,0 +1,12 @@
+.active {
+  border-bottom: 2px solid #06a0b4;
+}
+
+#grad {
+  background-image: radial-gradient(
+    circle 465px at -15.1% -25%,
+    rgba(17, 130, 193, 1) 0%,
+    rgba(67, 166, 238, 1) 49%,
+    rgba(126, 203, 244, 1) 90.2%
+  );
+}

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col col-6 offset-3">
+      <div class="card">
+        <div class="card-header bg-dark text-center text-white text-uppercase">
+          Sign In Please
+        </div>
+
+        <div class="card-body">
+          <!-- form should be marked with block -->
+          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-group row">
+              <label for="email" class="col-sm-3 col-form-label">Email</label>
+              <div class="col-sm-9">
+                <!-- to give it values and link it we have to just use ngModel in the input -->
+                <input class="form-control" type="email" name="email" ngModel id="" placeholder="Enter your email"
+                  required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm-9">
+                <input type="password" name="password" ngModel id="password" placeholder="Enter password" required>
+                <small id="emailHelp" class="form-text text-muted">Minimum length of the password should be 6 or
+                  more</small>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
