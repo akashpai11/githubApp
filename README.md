@@ -1,5 +1,6 @@
 # GithubLoginFirebase
 
+This project is made using Angular and Firebase. Here the git username is taken as the input abd using the API the details of the user are displayed.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ## Development server
